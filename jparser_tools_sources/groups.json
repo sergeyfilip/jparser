@@ -1,0 +1,1 @@
+{"groups":[{"name":"default","policy":"default","devices":[{"name":"Desk1","ip":"10.10.1.246"}]},{"name":"one","policy":"pol1","devices":[{"name":"Desk2","ip":"10.10.1.213"}]}]}

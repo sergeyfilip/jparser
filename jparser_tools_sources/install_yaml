@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+FILE_NETS=/etc/suricata.d/network.yaml
+FILEZ=/etc/suricata.d/suricata.yaml
+
+if [ -f "$FILE_NETS" ]; then
+     if grep -q "awl.yaml" $FILEZ; then
+
+        exit 1;
+     fi
+     if grep -q "include: /etc/suricata.d/network.yaml" $FILEZ; then
+
+        sed -i '/include: \/etc\/suricata.d\/network.yaml/a \    \include: \/var\/lib\/jparser\/awl.yaml' $FILEZ;
+
+     fi
+else
+    echo "$FILE_NETS does not exist";
+fi

@@ -1,0 +1,56 @@
+2,Amazon Multimedia, Amazon Multimedia Software
+3,Android, Android apps
+4,Apple, Apple Apps
+5,apple, apple apps
+6,Atlassian, Atlassian software
+7,Battle.net, Games Net
+8,BlackBerry,BlackBerry Apps
+9,Chrome, Crome Web browser
+10,Chromium, Web browser
+11,Cisco, Cisco Apps
+12,Curl, curl
+13,Eclipse, Eclipse java
+14,Debian_APT, Debian apt
+15,Dropbox,Dropbox
+16,Facebook,Facebook
+17,Firefox,Firefox
+18,GMail, Gmail SMTP Relay
+19,GNU_Wget, Gnu wget 1.16.1 built on darwin14.0.0
+20,Git-Bash, Git (Tested v2.6.0) / curl 7.47.1 (cygwin)
+21,Google, Google Apps
+22,Google_Drive,Google Drive 
+23,Internet_Explorer, IE
+24,iTunes, iTunes
+25,Java, Java
+26,Konqueror,Konqueror 
+27,MSEdge
+28,MS_Office_Components
+29,Malware, Malware
+30,Maxthon,Maxthon
+31,Microsoft_Updater,Microsoft_Updater
+32,Microsoft_Windows_Socket,Microsoft_Windows_Socket
+33,Mobile_Safari,Mobile_Safari
+34,Mozilla_Thunderbird,Mozilla_Thunderbird
+35,Mozilla, Mozilla Software
+36,NVIDEA, GeForce Experience, Windows Diagnostic and Telemetry
+37,NetFlix,Netflix App on AppleTV
+38,OS_X, OS X WebSockets
+39,One_Drive, One Drive
+40,Opera, Opera
+41,Outlook, Outlook 
+42,Other Software
+43,Safari,Safari
+44,Skype, Skype
+45,Steam,Steam OSX
+46,Tor, Tor Browser
+47,Ubuntu, Ubuntu Software
+48,Unidentified, Unidentified attack tool
+49,Unknown, Unknown apps
+50,Used, Used by many programs 
+51,VLC, VLC
+52,VMWare,Vmware
+53,Valve, Valve Steam
+54,Viber,Viber
+55,VirtualBox,Virtual Box
+56,Yahoo!, Slurp Indexer
+57,Yandex,Yandex Bot wget 1.18

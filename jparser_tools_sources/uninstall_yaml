@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+FILEZ=/etc/suricata.d/suricata.yaml
+
+if grep -q "awl.yaml" $FILEZ; then
+
+   sed -i '/\/var\/lib\/jparser\/awl.yaml/d' $FILEZ
+
+fi

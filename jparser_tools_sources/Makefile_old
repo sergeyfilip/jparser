@@ -1,0 +1,70 @@
+all: jparser jreport jrules jrules_file janalyzer jmapper
+
+jparser : main.o  item.o  rule_item.o
+	g++ -std=c++11 -o jparser main.o item.o rule_item.o -ljsoncpp /usr/lib64/libcurl.so.4 -g 
+
+jreport : jreport.o  item.o  rule_item.o device.o devices.o reportitem.o
+	g++ -g3 -std=c++11  -o jreport jreport.o item.o rule_item.o device.o devices.o reportitem.o -ljsoncpp /usr/lib64/libcurl.so.4 
+	
+jrules : jrules.o  item.o  rule_item.o
+	g++ -std=c++11 -o jrules jrules.o item.o rule_item.o -ljsoncpp /usr/lib64/libcurl.so.4 -g 
+	
+jrules_file : jrules_file.o  item.o  rule_item.o
+	g++ -std=c++11 -o jrules_file jrules_file.o item.o rule_item.o -ljsoncpp /usr/lib64/libcurl.so.4 -g 
+		
+	
+janalyzer : janalyzer.o  item.o  rule_item.o
+	g++ -std=c++11 -o janalyzer janalyzer.o item.o rule_item.o -ljsoncpp /usr/lib64/libcurl.so.4 -g
+
+jmapper : jmapper.o  item.o  rule_item.o device.o devices.o
+	g++ -std=c++11 -o jmapper jmapper.o device.o devices.o -ljsoncpp /usr/lib64/libcurl.so.4 -g
+	
+main.o : main.cpp    
+	g++ -c main.cpp -std=c++11
+	
+jrules.o : jrules.cpp    
+	g++ -g3 -c jrules.cpp -std=c++11
+	
+jrules_file.o : jrules_file.cpp    
+	g++ -g3 -c jrules_file.cpp -std=c++11
+	
+jreport.o : jreport.cpp    
+	g++ -c jreport.cpp -std=c++11 -g3
+	
+janalyzer.o : janalyzer.cpp    
+	g++ -c janalyzer.cpp -std=c++11 -g3
+
+jmapper.o : jmapper.cpp
+	g++ -c jmapper.cpp -std=c++11 -g3
+
+device.o : device.cpp device.h
+	g++ -std=c++11 -c device.cpp -g3
+
+devices.o : devices.cpp devices.h
+	g++ -std=c++11 -c devices.cpp -g3
+	
+reportitem.o : reportitem.cpp reportitem.h
+	g++ -std=c++11 -c reportitem.cpp -g3
+
+rule_item.o : rule_item.cpp rule_item.h
+	g++ -std=c++11 -c rule_item.cpp -g3
+item.o : item.cpp item.h
+	g++ -std=c++11 -c item.cpp -g3
+
+install : jparser jreport jrules jrules_file janalyzer jmapper full.json ja3fingerprint.json categories.txt categories_orig.txt
+	mkdir -p /etc/jparser
+	cp full.json /etc/jparser
+	cp ja3fingerprint.json /etc/jparser
+	cp categories.txt /etc/jparser
+	cp categories_orig.txt /etc/jparser
+	cp jparser /usr/bin
+	cp jrules /usr/bin
+	cp jreport /usr/bin
+	cp janalyzer /usr/bin
+	cp jmapper /usr/bin
+
+
+clean :   
+	rm -f jrules jreport jparser janalyzer jrules_file jmapper main.o item.o rule_item.o  jrules.o jreport.o janalyzer.o reportitem.o device.o devices.o jrules_file.o jmapper.o
+	
+	

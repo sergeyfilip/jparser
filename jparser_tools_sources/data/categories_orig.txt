@@ -1,0 +1,58 @@
+Amazon Music,Dreamweaver,Spotify
+Android
+Apple
+Atlassian
+Battle.net,Dropbox
+BlackBerry
+Chrome
+Chromium
+Cisco
+Curl
+Eclipse,java
+Debian_APT
+Dropbox
+Facebook
+Firefox 
+GMail
+Wget
+Git
+Google Apps
+Google Drive 
+Internet Explorer
+iTunes
+Java 
+java
+Konqueror 
+MSEdge
+MS_Office_Components
+Malware 
+malware
+Maxthon
+Microsoft_Updater
+Microsoft_Windows Socket
+Mobile_Safari
+Mozilla_Thunderbird
+Mozilla
+NVIDEA,
+NetFlix
+OS_X
+One_Drive
+Opera
+Outlook 
+Other_Software
+Safari
+Skype
+Steam
+ThunderBird
+Tor Browser
+Ubuntu Software
+Unidentified attack tool
+Unknown
+Used by many programs 
+VLC
+VMWare 
+Valve_Steam
+Viber
+VirtualBox
+Yahoo! Slurp Indexer
+Yandex Bot, wget 1.18

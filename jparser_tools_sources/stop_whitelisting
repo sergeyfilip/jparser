@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+cat /dev/null > /var/lib/jparser/devices.txt
+rm -f /var/lib/jparser/white_list_data.txt
+rm -f /var/lib/jparser/white_list_connections.txt
+rm -f /var/lib/jparser/white_list_report.json
+rm -f /var/lib/jparser/devices_ip.txt
+rm -f /var/lib/jparser/policies.json
+rm -f /etc/suricata.d/rules/redpiranha/white_list.rules
+rm -f /etc/jparser/count.txt
+cp /usr/crystaleye/apps/whitelisting/deploy/policies.json /var/lib/jparser/
+echo "1100000" > /etc/jparser/count.txt

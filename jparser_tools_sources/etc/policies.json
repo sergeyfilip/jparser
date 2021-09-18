@@ -1,0 +1,15 @@
+{
+  "policies": [
+   {
+    "name":"default",
+    "categories":["Firefox","Chrome","Thunderbird","Opera","Browsers"]
+   },
+   {
+    "name":"custom",
+    "categories":["Firefox","Chrome","Thunderbird","Eclipse"]
+   }
+
+
+
+]
+}
